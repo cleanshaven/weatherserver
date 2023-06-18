@@ -19,3 +19,8 @@
 
 # Go workspace file
 go.work
+/server.go~
+/server_test.go~
+/testweather.sh~
+/weatherserver.go~
+/weatherserver

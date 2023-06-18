@@ -1,0 +1,14 @@
+[Unit]
+Description=Turn on/off osram plug
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=bruce
+StandardOutput=journal
+Type=simple
+RemainAfterExit=yes
+ExecStart=/home/bruce/bin/weatherservice
+
+[Install]
+WantedBy=default.target

@@ -1,2 +1,6 @@
-github.com/cleanshaven/noaaweather v1.0.0 h1:MMAevVsRhSzCcUejRPm/nomo3maw41gdQUk92HdUOjs=
-github.com/cleanshaven/noaaweather v1.0.0/go.mod h1:aHwYSd4q/BXGNSbP7aFVfRjKE+CIxacUq5BknGzNtb4=
+github.com/cleanshaven/noaaweather v1.0.2 h1:xW9DQa6CF650C55+w9Yi1XOAqOWujwNg3by2aY9i0YM=
+github.com/cleanshaven/noaaweather v1.0.2/go.mod h1:194nCgOu0VkaLlvow2gBGepV1xi15iMbBIzKCWRP04M=
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/godbus/dbus/v5 v5.1.0 h1:4KLkAxT3aOY8Li4FRJe/KvhoNFFxo0m6fNuFUO8QJUk=
+github.com/godbus/dbus/v5 v5.1.0/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
