@@ -10,6 +10,8 @@ import (
 
 	"log"
 
+	"errors"
+
 	"github.com/cleanshaven/noaaweather"
 	"github.com/godbus/dbus/v5"
 )
@@ -25,6 +27,7 @@ type serverObject struct{}
 
 func (server serverObject) GetIcon(iconUrl string) (iconFile string, dbusError *dbus.Error) {
 	iconFile = ""
+
 	dbusError = nil
 
 	newIconUrl, err := fixWeatherIconUrl(iconUrl)
@@ -142,6 +145,10 @@ func getNOAAInfo(requestUrl string) ([]byte, error) {
 	}
 
 	defer resp.Body.Close()
+	if resp.StatusCode != 200 {
+		log.Println(resp.Status)
+		return []byte{}, errors.New(resp.Status)
+	}
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
